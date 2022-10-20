@@ -1,0 +1,495 @@
+/* 
+    Author: Gerald Williams;
+    Theme: Restaurant Food Order;
+    version: 1.0;
+*/
+
+/* CSS for All */
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-responsive2{
+    width: 100%;
+    height: 70px;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+.text-black{
+    color: black;
+}
+.text-pink{
+    color: #ff6b81;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color:green;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.error{
+    padding: 2%;
+    color: red;
+}
+.success{
+    padding: 2%;
+    color: green;
+}
+
+/* CSSS for navbar section */
+
+.logo{
+    width: 10%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+.menu ul li #admin-access{
+    color: #ff4757;
+}
+
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background: url(../images/banner7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10% 0;
+    animation: slide 20s infinite;
+}
+@keyframes slide{
+    25%{
+        background: url(../images/banner.jpg);
+        background-size: cover;
+    }
+    50%{
+        background: url(../images/banner5.jpeg);
+        background-size: cover;
+    }
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+.box-1{
+    position: relative;
+    width: 28%;
+    float: left;
+    margin: 2%;  
+}
+.box-1:hover{
+    padding: 5px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+
+.box-3{
+    position: relative;
+    border: 1px solid black;
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding: 5px;
+}
+.category-icon{
+    font-size: 30px;
+    color: #ff4757;
+}
+.login-icon{
+    font-size: 18px;
+    background: #ececec;
+    padding: 12px;
+    color: rgb(158, 47, 47);
+    border-radius: 20px;
+}
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 43%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+/*CSS for our service*/
+.service-container{
+    width: 80%;
+    padding: 30px 10%;
+    background-color: #f4f4f4;
+}
+section.title{
+    max-width: 700px;
+    margin: 0px auto 45px;
+    text-align: center;
+}
+section.title h1{
+    position: relative;
+    font-size: 32px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+section.title h1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 120%;
+    left: 0px;
+    background-color: blue;
+}
+section.title h1::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    top: calc(120% - 1px);
+    left: 50%;
+    transform: translate(-50%);
+    background-color: green;
+}
+.title p{
+    font-size: 18px;
+}
+section.service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.service .service-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-basis: 35%;
+    text-align: center;
+    padding: 20px 70px 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.4s,
+                box-shadow0.4s;
+}
+.service .service-box:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 12px 0px rgb(64, 231, 128);
+}
+
+.service-box i{
+    font-size: 30px;
+    color: green;
+    transition: 0.3s;
+}
+.service-box:hover i{
+    color: blue;
+}
+.service-box h2{
+    padding: 15px 0px 10px;
+    color: #444;
+    font-size: 20px;
+}
+.service-box p{
+    color: #888;
+    line-height: 1.3rem;
+}
+
+
+/* CSS for Social */
+.social{
+    background-color: blue;
+}
+.reach-us p{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.address p{
+    color: white;
+    padding-right: 40%;
+}
+
+.address2{
+    color: white;
+    padding-left: 40%;
+}
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.food-order{
+    background-image: url(../images/banner4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+.order{
+    background-color: rgb(118, 206, 237);
+    border: 5px solid rgb(210, 224, 228);
+    width: 50%;
+    height: 660px;
+    padding-top: 1px;
+    margin: 0 auto;
+}
+.contact{
+    background-color: #f9f9f9;
+    width: 50%;
+    height: 600px;
+    padding-top: 1px;
+    margin: 0 auto;
+}
+.contact legend{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+}
+.contact fieldset{
+    border: 1px solid black;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-input{
+    width: 96%;
+    height: 50px;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(164, 199, 199);
+    font-size: 1rem;
+}
+.container ::placeholder{
+    color: white;
+    padding: 10px;
+}
+legend{
+    color: white;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+.footer{
+    background-color: blue;
+}
+.footer p{
+    color: white;
+}
+.footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+    .box-1{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 5% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+    }
+    
+}
+@media(max-width: 1000px){
+    .service .service-box{
+        flex-basis: 90%;
+    }
+}
+@media(max-width: 600px){
+    .service .service-box{
+        flex-basis: 100%;
+    }
+}

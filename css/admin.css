@@ -1,0 +1,311 @@
+/* 
+    Author: Gerald Williams;
+    Theme: Food Order Website Admin;
+    version: 1.0;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+    color: white;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.tbl-full{
+    width:100%;
+ }
+
+ table tr th{
+    border-bottom: 2px solid black;
+    padding: 1%;
+    text-align: left;
+ }
+
+ table tr td{
+    padding: 1%;
+ }
+
+ .btn-primary{
+    background-color: blue;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold; 
+ }
+ .btn-primary:hover{
+    background-color:darkblue;
+ }
+
+ .btn-secondary{
+    background-color: green;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ .btn-secondary:hover{
+    background-color:darkgreen;
+ }
+ .btn-secondary2{
+    background-color: green;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ .btn-secondary2:hover{
+    background-color:darkgreen;
+ }
+
+ .btn-danger{
+    background-color: red;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ .btn-danger:hover{
+    background-color:darkred;
+ }
+ .success{
+    color: green;
+ }
+ .error{
+    color: red;
+ }
+
+/*Admin Box CSS*/
+ .adminbox{
+    background: white;
+    padding: 40px;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+.adminbox2{
+    background: white;
+    padding: 40px;
+    text-align: center;
+    width: 500px;
+    height: 230px;
+    margin: auto
+}
+.categorybox{
+    background: white;
+    text-align: center;
+    height: 450px;
+    width: 550px;
+    margin: auto;
+}
+.categorybox2{
+    background: white;
+    text-align: center;
+    height: 570px;
+    width: 550px;
+    margin: auto;
+}
+#foodbox{
+    background: white;
+    text-align: center;
+    padding: 40px;
+    height: 790px;
+    width: 550px;
+    margin: auto;
+}
+#foodbox2{
+    background: white;
+    text-align: center;
+    height: 670px;
+    width: 550px;
+    margin: auto;
+}
+#updatebox{
+    background: white;
+    text-align: center;
+    padding: 40px;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+}
+
+/*css for Admin input*/
+.ad{
+    width:300px;
+    height:15px;
+    border:none;
+    border-bottom: 2px solid green;
+    border-radius: 5px;
+    padding-bottom:5px;
+    outline: none;
+}
+/*css for Admin input ends here*/
+
+button{
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+label{
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: black;
+    display: block;
+}
+
+
+/*css for Menu*/
+.menu{
+    top: 0%;
+    position: sticky;
+    z-index: 999;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+}
+.menu ul li a:hover{
+    color: blue;
+}
+
+/* css for Main Content*/
+.main-content{
+    background-color: #ececec;
+    padding: 3% 0;
+}
+.col-4{
+    width: 17%;
+    background-color: rgb(43, 99, 240);
+    margin: 1%;
+    padding: 3%;
+    text-align: center;
+    float: left;
+    color: white;
+}
+h1{
+    color: rgb(8, 154, 57);
+}
+
+/* css for Footer*/
+.footer{
+    background-color: green;
+}
+.text-center a{
+    text-decoration: none;
+    color: white;
+}
+
+/*css for login*/
+.login{
+   background-color: white;
+    width: 22%;
+    margin: 10% auto;
+    padding: 4%;
+    border-radius: 10px;
+}
+.login form{
+    text-align: center;
+}
+.login h3{
+    text-align:center;
+}
+
+.login label{
+    text-align: left;
+    color: black;
+}
+.login button{
+    color: white;
+    background: blue;
+    width:300px;
+    font-weight: bold; 
+}
+.login button:hover{
+    background: green;
+}
+/*css for login input*/
+.txt2 {
+    width:300px;
+    height:20px;
+    border:none;
+    border-bottom: 2px solid black;
+    padding-bottom:5px;
+    outline: none;
+    border-radius:5px;
+}
+/*css for Add category and Food input*/
+.txt{
+    border-radius:5px;
+    border:none;
+    padding-bottom:5px;
+    border-bottom: 2px solid green;
+    height:15px;
+    width:350px;
+    outline: none;
+}
+.img{
+    height:20px;
+    padding-bottom:5px;
+}
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    section.ad-login input[type="text"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+    section.ad-login input[type="password"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+    section.ad-login button[type="submit"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+    .login{
+        width: 90%;
+        padding: 2%;
+    }
+}
+@media(max-width:1167px){
+    .login{
+        width: 50%;
+        padding: 2%;
+    }
+}
+@media(max-width:898px){
+    .login{
+        width: 90%;
+        padding: 2%;
+    }
+}
+
